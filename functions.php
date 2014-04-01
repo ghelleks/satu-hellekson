@@ -1,6 +1,20 @@
 <?php
 
 /*
+ * Make the fonts come from us, not Google
+ */
+function satu_hellekson_replace_fonts() {
+
+    wp_deregister_style( array('satu-fonts') );
+    wp_dequeue_style( array('satu-fonts') );
+
+    wp_register_style( 'satu-hellekson-roboto', '/wp-content/uploads/roboto/roboto_condensed_macroman/stylesheet.css');
+    wp_enqueue_style( 'satu-hellekson-roboto' );
+
+}
+add_action( 'wp_print_styles', 'satu_hellekson_replace_fonts', 99999 );
+
+/*
  * Support the Twitter Card plugin from Niall: https://github.com/niallkennedy/twitter-cards
  */
 if ( ! function_exists( 'add_twitter_card_properties' ) ) {
