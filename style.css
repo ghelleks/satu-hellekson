@@ -1,0 +1,23 @@
+/*
+Theme Name: Satu for Hellekson.com
+Theme URI: http://themehybrid.com/themes/satu
+Template: satu
+Description: One-column beautiful and mobile friendly WordPress theme, good choice for professional blogger and smart photographer. Please open docs/readme.html to read the documentation.
+Version: 1.8
+Author: Satrya
+Author URI:	http://satrya.me
+Tags: light, one-column, flexible-width, custom-background, featured-images, microformats, threaded-comments, translation-ready
+Text Domain: satu-hellekson
+
+Support URI: http://themehybrid.com/support/
+
+License: GNU General Public License
+License URI: license.txt
+
+Satu WordPress Theme, Copyright 2013 satrya.me
+Satu is distributed under the terms of the GNU GPL
+
+*/
+
+@import url("../satu/style.css");
+
